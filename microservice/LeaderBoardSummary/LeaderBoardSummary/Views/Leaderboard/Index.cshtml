@@ -1,0 +1,99 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">Leaderboard - Top 10</h1>
+    </div>
+</section>
+<div class="container mb-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="table-responsive">
+                <div class="row">
+                    @foreach (var tr in ViewBag.listAllLeaderboard)
+                    {
+                    <div class="column col-xs-12 col-sm-6 col-md-3 col-lg-3 bg-info" style="text-align: center; border:double">
+                        <h2 style="width:100%;">@tr.player</h2>
+                        <h2 style="width:100%">Rank: @tr.rank</h2>
+                        <h2 style="width:100%">Score: @tr.score</h2>
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Footer -->
+<footer class="text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 copyright mt-3">
+                <p class="float-left">
+                    <a href="#">^ Back to top</a>
+                </p>
+                <a class="btn btn-danger btn-lg pull-right" href="@Url.Action("Reset", "Leaderboard")" data-toggle="tooltip" title="Reset Leaderboard and All Matches">Reset LeaderBoard</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="container">
+    <div class="class=" jumbotron"">
+        <div class="page-header">
+            <section class="jumbotron text-center">
+                <div class="container">
+                    <h1 class="jumbotron-heading">Matches</h1>
+                </div>
+            </section>
+            <div>
+                <a class="btn btn-primary btn-lg pull-right" href="@Url.Action("Create","Leaderboard")">Play new Match</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="table-responsive">
+        <table cellpadding="2" cellspacing="2" border="1" class="table table-striped table-hover table-bordered">
+            <tr class="bg-info">
+                <th>Player Name</th>
+                <th>Player Level</th>
+                <th>Opponent Name</th>
+                <th>Opponent Level</th>
+                <th>Status</th>
+                <th>Potential Points</th>
+                <th>Winner</th>
+                <th>Update</th>
+            </tr>
+            @foreach (var tr in ViewBag.listAllScores)
+                {
+            <tr>
+                <td>@tr.player</td>
+                <td>@tr.level</td>
+                <td>@tr.opponentName</td>
+                <td>@tr.opponentLevel</td>
+                <td>@tr.status</td>
+                <td>@tr.potentialPoints</td>
+                <td>@tr.winner</td>
+                <td>
+                    @if (tr.status != "complete")
+                            {
+                    <a href="@Url.Action("Edit", "Leaderboard", new { id = tr.matchId })" class="glyphicon glyphicon-check" data-toggle="tooltip" title="Choose Winner!"></a>
+                            }
+                </td>
+            </tr>
+                }
+
+
+        </table>
+    </div>
+</div>
+
+</div>

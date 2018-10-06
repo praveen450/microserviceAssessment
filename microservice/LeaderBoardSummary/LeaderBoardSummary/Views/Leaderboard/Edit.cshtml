@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewData["Title"] = "Edit";
+}
+@model LeaderBoardSummary.ViewModels.MatchViewModel;
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<body>
+    <div class="container">
+        <a href="@Url.Action("Index","Leaderboard")">< Back to Leadeboard</a>
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Choose Winner Now!</h1>
+            </div>
+        </section>
+        @using (Html.BeginForm("Edit", "Leaderboard", FormMethod.Post, new { @class = "form-horizontal" }))
+        {
+
+            <div class="form-group">
+                <div class="col-md-5 col-md-offset-4" style="display: inline-flex">
+                    <h2 class="text-primary"> Player:  </h2>&nbsp; &nbsp;
+                    <h2>@Model.Match.player</h2>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-5 col-md-offset-4" style="display: inline-flex">
+                    <h2 class="text-primary"> Opponent Name:  </h2>&nbsp; &nbsp;
+                    <h2> @Model.Match.opponentName</h2>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-5 col-md-offset-3">
+                    @Html.TextBoxFor(Model => Model.Match.winner, new { @class = "form-control", placeholder = "Choose Winner", @required = "required" })
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <div class="col-md-4 col-md-offset-4">
+                    <button type="submit" class="btn btn-primary btn-lg" style="margin-left: 45px">Choose Winner</button>
+                    @Html.HiddenFor(Model => Model.Match.matchId)
+                    @Html.HiddenFor(Model => Model.Match.player)
+                    @Html.HiddenFor(Model => Model.Match.opponentName)
+                </div>
+            </div>
+
+        }
+    </div>
+</body>

@@ -1,0 +1,14 @@
+C:\Users\Praveen Morthala\EOGProjects\microService\MatchResultWebApi\MatchResultWebApi\bin\Debug\netcoreapp2.1\MatchResultWebApi.deps.json
+C:\Users\Praveen Morthala\EOGProjects\microService\MatchResultWebApi\MatchResultWebApi\bin\Debug\netcoreapp2.1\MatchResultWebApi.runtimeconfig.json
+C:\Users\Praveen Morthala\EOGProjects\microService\MatchResultWebApi\MatchResultWebApi\bin\Debug\netcoreapp2.1\MatchResultWebApi.runtimeconfig.dev.json
+C:\Users\Praveen Morthala\EOGProjects\microService\MatchResultWebApi\MatchResultWebApi\bin\Debug\netcoreapp2.1\MatchResultWebApi.dll
+C:\Users\Praveen Morthala\EOGProjects\microService\MatchResultWebApi\MatchResultWebApi\obj\Debug\netcoreapp2.1\MatchResultWebApi.csprojAssemblyReference.cache
+C:\Users\Praveen Morthala\EOGProjects\microService\MatchResultWebApi\MatchResultWebApi\obj\Debug\netcoreapp2.1\MatchResultWebApi.csproj.CoreCompileInputs.cache
+C:\Users\Praveen Morthala\EOGProjects\microService\MatchResultWebApi\MatchResultWebApi\obj\Debug\netcoreapp2.1\MatchResultWebApi.RazorAssemblyInfo.cache
+C:\Users\Praveen Morthala\EOGProjects\microService\MatchResultWebApi\MatchResultWebApi\obj\Debug\netcoreapp2.1\MatchResultWebApi.RazorAssemblyInfo.cs
+C:\Users\Praveen Morthala\EOGProjects\microService\MatchResultWebApi\MatchResultWebApi\obj\Debug\netcoreapp2.1\MatchResultWebApi.AssemblyInfoInputs.cache
+C:\Users\Praveen Morthala\EOGProjects\microService\MatchResultWebApi\MatchResultWebApi\obj\Debug\netcoreapp2.1\MatchResultWebApi.AssemblyInfo.cs
+C:\Users\Praveen Morthala\EOGProjects\microService\MatchResultWebApi\MatchResultWebApi\obj\Debug\netcoreapp2.1\MatchResultWebApi.RazorTargetAssemblyInfo.cache
+C:\Users\Praveen Morthala\EOGProjects\microService\MatchResultWebApi\MatchResultWebApi\bin\Debug\netcoreapp2.1\MatchResultWebApi.pdb
+C:\Users\Praveen Morthala\EOGProjects\microService\MatchResultWebApi\MatchResultWebApi\obj\Debug\netcoreapp2.1\MatchResultWebApi.dll
+C:\Users\Praveen Morthala\EOGProjects\microService\MatchResultWebApi\MatchResultWebApi\obj\Debug\netcoreapp2.1\MatchResultWebApi.pdb
