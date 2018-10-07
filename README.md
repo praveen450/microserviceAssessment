@@ -25,8 +25,7 @@ Microservice application is developed with the requirement from https://github.c
 </br><b>POST : http://localhost:53773/api/leaderboard/reset </b> "To Clear Leaderboard Summary and All Matches</br>
 ![capturems6](https://user-images.githubusercontent.com/43896941/46577296-6a026d00-c9a9-11e8-8705-acf2cea07541.PNG)
 
-
-
+</br> <b> Leaderboard UI:</b> </br>
 </br> <b> Leaderboard Summary and Matches:</b> </br>
 ![leaderboard-1](https://user-images.githubusercontent.com/43896941/46566844-eafb2f00-c8eb-11e8-99b7-097e31cb07b9.PNG)
 
