@@ -1,9 +1,7 @@
 # Microservice:
 Microservice application is developed with the requirement from https://github.com/jwo/microservice-assessment </br>
 </br>
-
-1. Run the MatchResultWebApi solution which is developed with Asp.NetCore Web Api from MatchResultWebApi folder.
- </br>
+1. Run the MatchResultWebApi solution which is developed with Asp.NetCore Web Api from MatchResultWebApi folder.</br>
 2. Then run the LeaderBoardSummary solution which is developed with Asp.Net Core MVC. from LeaderBoardSummary folder.</br>
 </br>
 </br> <b> Web Api: </b> </br>
