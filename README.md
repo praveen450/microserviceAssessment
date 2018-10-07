@@ -8,6 +8,7 @@ Microservice application is developed with the requirement from https://github.c
 </br>
 </br> <b> Web Api: </b> </br>
 </br>GET: http://localhost:53773/api/leaderboard </b>  "Return all the leaderboard details"</br>
+
 ![capturems1](https://user-images.githubusercontent.com/43896941/46577315-64f1ed80-c9aa-11e8-944c-3d5261742efd.PNG)
 
 </br><b>GET: http://localhost:53773/api/leaderboard/1 </b> "Return id '1' leaderboard details" </br>
